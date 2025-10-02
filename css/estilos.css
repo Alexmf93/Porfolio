@@ -27,6 +27,7 @@ nav{
     max-width: 1200px;
     align-items: center;
 }
+
 .logo{
     font-size: 1.5rem;
     font-weight: bold;
@@ -63,6 +64,7 @@ nav a:hover {
 .hero-content h1{
     font-size: 3.5rem;
 }
+
 .hero-content p{
     font-size: 1.5;
     margin-bottom: 2rem;
@@ -100,11 +102,42 @@ h2{
 
 .sobre-mi{
     display: flex;
+    align-items: center;
+    gap: 2%;
 }
 
 .sobre-mi-texto{
     width: 50%;
+    line-height: 1.6;
 }
+
 .sobre-mi-imagen{
-    width: 50%  ;
+    width: 50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #687AE5 0%, #754fa8 100%);
+    font-size: 4rem;
+    border-radius: 20px;
+    height: 400px;
+}
+
+.skills{
+    background: #e5e3e3;
+}
+.skills-container{
+    display: flex;
+    gap: 2%;
+    padding: 2rem;
+}
+
+.skills-card{
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.skills-card h3 {
+    color: #687ae5;
+    
 }
