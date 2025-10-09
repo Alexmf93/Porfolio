@@ -11,24 +11,24 @@
         <nav>
             <div class="logo">{ Dev FullStack }</div>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Sobre mí</a></li>
-                <li><a href="">Habilidades</a></li>
-                <li><a href="">Proyectos</a></li>
-                <li><a href="">Contactos</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contactos</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="hero-content">
             <h1>Hola soy Desarrollador Web</h1>
             <p>Creando experiencias digitales increibles</p>
-            <a class = "button" href="">Ver mis proyectos</a>
+            <a class = "button" href="#proyectos">Ver mis proyectos</a>
         </div>
     </section>
 
-    <section>
+    <section id="sobre-mi">
         <h2>Sobre mí</h2>
         <div class="sobre-mi">
             <div class="sobre-mi-texto">
@@ -48,7 +48,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section id = "habilidades" class="skills">
         <h2>Habilidades</h2>
         <div class="skills-container">
             <div class="skills-card">
@@ -81,5 +81,68 @@
             </div>
         </div>
     </section>
+    <!-- Proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos destacados</h2>
+        <div class="skills-container">
+            <div class="skills-card">
+                <div class="project-image project-card">
+                    🛒
+                </div>
+                <div class="project-content">
+                    <h3>E-Comerce</h3>
+                    <p>Plataforma de comercio electrónico completa con carrito de compras y pasarela de pago.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="skills-card">
+                <div class="project-image project-card">
+                    📇
+                </div>
+                <div class="project-content">
+                    <h3>App de tareas</h3>
+                    <p>Aplicaciones de gestion de tareas con funcionalidades de colaboracion a tiempo real.</p>
+                    <div class="project-tags">
+                        <span>Vue.js</span>
+                        <span>Firebase</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="skills-card">
+                <div class="project-image project-card">
+                    🎨
+                </div>
+                <div class="project-content">
+                    <h3>Porfolio creativos</h3>
+                    <p>Sitio web porfolio con animaciones y diseño interactivo</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tiene un proyecto en mente? ¡Me encantaría escucharte!</p>
+        <div class="contactos">
+            <a class="button" href="mailto:contacto@ejemplo.com">Email</a>
+            <a class="button" href="#">GitHub</a>
+            <a class="button" href="#">LinkedIn</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Porfolio Desarrollador Web. Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
