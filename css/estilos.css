@@ -105,6 +105,25 @@ nav a:hover::after {
     width: 100%;
 }
 
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none; /* Hidden by default on desktop */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1100; /* Ensure it's above other content */
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--color-primary);
+    transition: all 0.3s ease-in-out;
+}
+
 /* =============================================
    SECCIÓN HERO
    ============================================= */
@@ -496,11 +515,48 @@ footer{
         flex-direction: column;
         justify-content: center;
         padding: 0.2rem;
+        align-items: flex-start; /* Align items to start for mobile menu */
+        position: relative;
     }
     nav ul{
+        display: none; /* Hide by default on mobile */
         flex-direction: column;
+        width: 100%;
+        background: rgba(10, 14, 39, 0.95); /* Darker background for menu */
+        position: absolute;
+        top: 100%; /* Position below the header */
+        left: 0;
+        padding: 1rem 0;
+        border-top: 1px solid var(--glass-border);
+        box-shadow: var(--shadow);
+        gap: 0;
+    }
+    nav ul.active{
+        display: flex; /* Show when active */
+    }
+    nav ul li{
+        width: 100%;
         text-align: center;
-        gap: 0.2rem;
+    }
+    nav ul li a{
+        padding: 1rem;
+        display: block;
+        width: 100%;
+    }
+    .hamburger{
+        display: block; /* Show hamburger on mobile */
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
     }
     .hero{
         margin-top: 0;
@@ -619,4 +675,18 @@ footer{
 .project-card:hover .project-img {
     transform: scale(1.05); /* Zoom sutil al pasar el ratón */
     filter: brightness(1.1); /* Aumenta el brillo ligeramente */
+}
+
+/* =============================================
+   ESTILOS PARA EL FONDO ESTELAR (CANVAS)
+   ============================================= */
+
+#starfield {
+    position: fixed; /* Lo fija a la ventana */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Lo envía detrás de todo el contenido */
+    pointer-events: none; /* Asegura que no interfiera con clics ni otros eventos */
 }

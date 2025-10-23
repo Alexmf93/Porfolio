@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Alejandro Moya, Desarrollador Web Full-Stack. Especializado en crear experiencias digitales modernas con Java, JavaScript y más.">
+    <meta name="keywords" content="html, meta tags, desarrollo web">
+    <meta name="author" content="Alejandro Moya Fernández">
     <title>Mi porfolio</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+    <!-- === NUEVO: CANVAS PARA EL FONDO ESTELAR === -->
+    <canvas id="starfield" role="img" aria-label="Fondo animado de estrellas con estilo espacial"></canvas>
+
     <header>
         <nav>
             <div class="logo">{ Dev FullStack }</div>
-            <ul>
+            <ul id="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contactos</a></li>
             </ul>
+            <button class="hamburger" aria-label="Abrir menú de navegación">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </nav>
     </header>
 
@@ -35,8 +46,6 @@
                 <p class="code-line">}; <span class="cursor">|</span></p>
             </div>
             <!-- === FIN DE LA ANIMACIÓN === -->
-
-            
         </div>
     </section>
 
@@ -130,7 +139,7 @@ Me apasiona     el mundo del desarrollo web, la programación, y sigo aprendiend
             </div>
             <div class="skills-card project-card">
                 <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" alt="Captura de pantalla de un portafolio creativo con código y diseño" class="project-img">
+                    <img src="img/e-comerce-img.png" alt="Captura de pantalla de un portafolio creativo con código y diseño" class="project-img">
                 </div>
                 <div class="project-content">
                     <h3>Porfolio Creativo</h3>
@@ -157,5 +166,8 @@ Me apasiona     el mundo del desarrollo web, la programación, y sigo aprendiend
     <footer>
         <p>&copy; 2025 Porfolio Desarrollador Web. Todos los derechos reservados</p>
     </footer>
+
+    <!-- MODIFICADO: Script movido al final del body -->
+    <script src="js/script.js"></script>
 </body>
 </html>
