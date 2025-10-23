@@ -322,6 +322,8 @@ h2::after {
     display: grid;
     gap: 2%;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 1fr;
+    align-items: stretch;
 }
 
 .skills-card, .project-card {
@@ -689,4 +691,9 @@ footer{
     height: 100%;
     z-index: -1; /* Lo envía detrás de todo el contenido */
     pointer-events: none; /* Asegura que no interfiera con clics ni otros eventos */
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }
