@@ -94,6 +94,16 @@ En `js/script.js` puedes modificar:
 - **Estudios**: FP Superior en Desarrollo de Aplicaciones Web (Granada, España)
 - **Especialidades**: HTML, CSS, JavaScript, Java, PHP
 
+## 🏢 Disponibilidad para contratación por empresas
+
+Estoy disponible para incorporarme a equipos técnicos o colaborar en proyectos empresariales. Ofrezco:
+
+- Incorporación en plantilla o contratación por proyecto
+- Adaptación a metodologías ágiles (Scrum, Kanban)
+- Reunión técnica para evaluación del encaje y entrega de CV
+
+Contacto preferente: amoyafernandez93@gmail.com o a través de mi perfil de LinkedIn: https://www.linkedin.com/in/amoya/
+
 ## 📝 Licencia
 
 Este proyecto es de uso personal. Si lo utilizas como referencia, se agradecería la mención del autor.

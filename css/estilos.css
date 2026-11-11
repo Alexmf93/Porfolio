@@ -464,6 +464,32 @@ h2::after {
     text-align: center;
 }
 
+/* =============================================
+   SECCIÓN CONTRATACIÓN EMPRESARIAL
+   ============================================= */
+.contratacion{
+    background: rgba(18, 22, 46, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+}
+.contratacion-container{
+    padding: 1rem 2rem;
+    text-align: left;
+}
+.contratacion ul{
+    margin-top: 1rem;
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+.empresa-cta{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 .contactos{
     margin-top: 1rem;
 }
